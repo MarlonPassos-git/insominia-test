@@ -1,10 +1,13 @@
 _id: fld_e4057d3bd2ae429bbec317ee231816c6
 type: RequestGroup
 parentId: wrk_fd1176872b1b496aafdf3468c4623081
-modified: 1670634448309
+modified: 1670709573937
 created: 1670634448309
-name: category
+name: Categories
 description: ""
-environment: {}
-environmentPropertyOrder: null
+environment:
+  resource: categories
+environmentPropertyOrder:
+  "&":
+    - resource
 metaSortKey: -1670634448309

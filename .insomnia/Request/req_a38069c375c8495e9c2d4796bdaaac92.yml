@@ -1,15 +1,49 @@
 _id: req_a38069c375c8495e9c2d4796bdaaac92
 type: Request
 parentId: fld_e4057d3bd2ae429bbec317ee231816c6
-modified: 1670634464189
+modified: 1670709546589
 created: 1670634449876
-url: "{{ _.baseUrl }}/category"
-name: New Request
-description: ""
-method: GET
-body: {}
+url: "{{ _.base_URL }}/{{ _.resource }}"
+name: Create
+description: |-
+  ## Oque faz
+
+  Cria uma categoria 
+
+  ## Regra de negocios:
+  - Nao podemos cadastrar categorias com o mesmo nome 
+
+  ## Possiveis resultados 
+
+  ### 200 
+  Quando cadastramos alguma categoria com sucesso 
+
+  ```json
+  {
+  	"message": "Category created"
+  }
+  ```
+  ### 400
+  Se caso alguma categoria ja tenha sido cadastrada 
+
+  ```json
+  {
+  	"error": "Category already exists"
+  }
+  ```
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"name": "SUV111",
+    	"description": "Categoria de carro"
+    }
 parameters: []
-headers: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_eb784815d07042928665fa0187322349
 authentication: {}
 metaSortKey: -1670634449876
 isPrivate: false

@@ -1,8 +1,28 @@
 _id: spc_6e2d0c7174834194acf8bf52a788d873
 type: ApiSpec
 parentId: wrk_fd1176872b1b496aafdf3468c4623081
-modified: 1670634356069
+modified: 1670709547538
 created: 1670634356069
 fileName: test
-contents: ""
+contents: >+
+  openapi: 3.0.0
+
+  info:
+    description: "Api desenvolida no curso de Node.Js da [Rocketseat](https://www.rocketseat.com.br/)"
+    version: 0.0.1
+    title: Curso - Rocketseat - Chapter 2 
+    contact:
+      email: 1marlonpassos@gmaill.com 
+  paths:
+    /categories:
+      post:
+        tags:
+          - pet
+        summary: Create1
+        description: Cria uma nova organizacao 
+        responses:
+          "400":
+            description: assd
+            
+            
 contentType: yaml
