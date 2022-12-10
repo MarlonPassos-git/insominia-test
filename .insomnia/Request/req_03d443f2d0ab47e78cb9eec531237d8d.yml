@@ -1,0 +1,29 @@
+_id: req_03d443f2d0ab47e78cb9eec531237d8d
+type: Request
+parentId: fld_8b3e90d3b8f9493089d836ba78098158
+modified: 1670709498325
+created: 1670697163067
+url: "{{ _.base_URL }}/{{ _.resource }}"
+name: Create
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"name": "automatico",
+    	"description": "Carro como cambio automatico"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1670697163068
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

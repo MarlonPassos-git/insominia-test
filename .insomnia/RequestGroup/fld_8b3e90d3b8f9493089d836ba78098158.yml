@@ -1,0 +1,13 @@
+_id: fld_8b3e90d3b8f9493089d836ba78098158
+type: RequestGroup
+parentId: wrk_fd1176872b1b496aafdf3468c4623081
+modified: 1670709451553
+created: 1670697139657
+name: Specifications
+description: ""
+environment:
+  resource: specifications
+environmentPropertyOrder:
+  "&":
+    - resource
+metaSortKey: -1670697139657
