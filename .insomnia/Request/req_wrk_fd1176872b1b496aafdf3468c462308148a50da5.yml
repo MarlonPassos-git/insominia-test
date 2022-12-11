@@ -1,0 +1,21 @@
+_id: req_wrk_fd1176872b1b496aafdf3468c462308148a50da5
+type: Request
+parentId: wrk_fd1176872b1b496aafdf3468c4623081
+modified: 1670721375851
+created: 1670721375851
+url: "{{ base_url }}/categories"
+name: List
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1670721375851
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

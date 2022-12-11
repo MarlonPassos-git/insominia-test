@@ -1,0 +1,31 @@
+_id: req_ce7d0cd4471f404e8f3cc3acd7914fef
+type: Request
+parentId: fld_e4057d3bd2ae429bbec317ee231816c6
+modified: 1670721145197
+created: 1670715704323
+url: "{{ _.base_URL }}/{{ _.resource }}/import "
+name: Import
+description: ""
+method: GET
+body:
+  mimeType: multipart/form-data
+  params:
+    - id: pair_704c7bd981bd481597845b671dfa9ce1
+      name: file
+      value: ""
+      description: ""
+      type: file
+      multiline: null
+parameters: []
+headers:
+  - name: Content-Type
+    value: multipart/form-data
+authentication: {}
+metaSortKey: -1670715704323
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,26 +1,25 @@
-_id: req_03d443f2d0ab47e78cb9eec531237d8d
+_id: req_wrk_fd1176872b1b496aafdf3468c46230811a1d3cfb
 type: Request
-parentId: fld_8b3e90d3b8f9493089d836ba78098158
-modified: 1670712330093
-created: 1670697163067
-url: "{{ _.base_URL }}/{{ _.resource }}"
-name: Create
+parentId: wrk_fd1176872b1b496aafdf3468c4623081
+modified: 1670724528902
+created: 1670721106082
+url: "{{ base_url }}/categories"
+name: Cria uma nova categoria
 description: ""
 method: POST
 body:
   mimeType: application/json
   text: |-
     {
-    	"name": "automatisdsdsddsdsdso",
-    	"description": "Carro como cambio automatico"
+      "name": "string",
+      "description": "string"
     }
 parameters: []
 headers:
   - name: Content-Type
     value: application/json
-    id: pair_ece39485861246d9a8e0196a05572ccd
 authentication: {}
-metaSortKey: -1670697163068
+metaSortKey: -1670721106082
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

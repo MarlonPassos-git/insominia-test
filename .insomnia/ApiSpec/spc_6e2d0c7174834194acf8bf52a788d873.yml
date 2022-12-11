@@ -1,10 +1,10 @@
 _id: spc_6e2d0c7174834194acf8bf52a788d873
 type: ApiSpec
 parentId: wrk_fd1176872b1b496aafdf3468c4623081
-modified: 1670709547538
+modified: 1670724635932
 created: 1670634356069
 fileName: test
-contents: >+
+contents: >
   openapi: 3.0.0
 
   info:
@@ -13,16 +13,89 @@ contents: >+
     title: Curso - Rocketseat - Chapter 2 
     contact:
       email: 1marlonpassos@gmaill.com 
+  servers:
+     - url: http://localhost:3333/ 
   paths:
     /categories:
       post:
         tags:
-          - pet
-        summary: Create1
-        description: Cria uma nova organizacao 
+          - Categories
+        summary: Create
+        description: Create a new Category that did not exist before
+        requestBody:
+          description: Categorie data
+          content:
+            'application/json':
+              schema: 
+                type: object
+                required:
+                  - name
+                  - description
+                properties:
+                  name: 
+                    type: string
+                  description:
+                    type: string
+              examples: 
+                foo:
+                  summary: Create a simple new car category
+                  value: {
+                    	"name": "SUV11",
+                      "description": "Categoria de carro"
+                    }
         responses:
-          "400":
-            description: assd
-            
-            
+          "201":
+            description: Category created successfully
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/Sucess'
+          "400": 
+            description: This category already exists
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/Error'   
+      get:
+        tags:
+          - Categories
+        summary: List
+        description: List all Categories 
+        responses:
+          "200":
+            description: Return all Categories 
+            content:
+              application/json:
+                schema:
+                  type: array
+                  items: 
+                    $ref: '#/components/schemas/Categoria'
+  components:
+    schemas:
+      Categoria:
+        type: object
+        required:
+          - name
+          - description
+          - id
+          - create_at
+        properties:
+          name: 
+            type: string
+          description:
+            type: string
+          id: 
+            type: string
+          create_at:
+            type: string
+      Error:
+        type: object
+        properties:
+          message: 
+            type: string
+      Sucess:
+        type: object
+        properties:
+            message: 
+              type: string
 contentType: yaml
